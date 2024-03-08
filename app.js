@@ -20,7 +20,7 @@ const Forgot = require("./models/forgot");
 const Download = require("./models/userdownlaod");
 
 const app = express();
-console.log("Version BETA")
+console.log("Version BETA | ALL NEW BRANCH")
 console.log("Cokaine Welcomes You ! ");
 
 app.use(cors());
