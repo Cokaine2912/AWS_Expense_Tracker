@@ -20,8 +20,8 @@ const Forgot = require("./models/forgot");
 const Download = require("./models/userdownlaod");
 
 const app = express();
-
-console.log("Cokaine Welcomes You !");
+console.log("Version BETA")
+console.log("Cokaine Welcomes You ! ");
 
 app.use(cors());
 app.use(helmet());
