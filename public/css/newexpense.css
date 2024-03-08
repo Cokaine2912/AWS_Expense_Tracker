@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple');
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trirong", serif;
+    font-weight: 550;
+}
+
+html {
+    height: 100vh;
+}
+
+#logout-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 7px;
+    padding: 10px;
+}
+
+#logout-link {
+    text-decoration: none;
+
+}
+
+
+#expense-form {
+    border: 4px solid rgba(0, 114, 176, 0.696);
+    border-radius: 7px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 10px;
+    width: max-content;
+}
+
+
+
+#expense-list {
+    list-style-type: none;
+    list-style: circle;
+
+}
+
+.db {
+    margin-left: 3px;
+    border-radius: 7px;
+}
+
+#add-expense-button {
+    font-family: "Trirong", serif;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#display-div {
+    display: flex;
+    justify-content: center;
+}
+#heading-div{
+    text-align: center;
+    text-decoration: underline;
+}
+#rzp-button {
+    font-family: "Trirong", serif;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 10px;
+    background-color: white;
+    color: gold;
+    font-size: 20px;
+}
+
+#rzp-button:hover {
+    text-decoration: underline;
+}
+
+#if-premium {
+    margin-right: 10px;
+    color: black;
+
+}
+
+#leader-button {
+    font-family: "Trirong", serif;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+#leader-board-div {
+    display: inline;
+    text-align: center;
+}
+
+#leader-board-ul {
+    margin: auto;
+}
+
+
+
+#table-div {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 4px solid rgba(0, 114, 176, 0.696);
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: auto;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: auto;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+#username-dropdown {
+    border: 0px;
+
+}
+
+#if-premium {
+    font-size: 25px;
+}
+
+.dropdown-item {
+    margin-left: 10px;
+}
+
+
+
+.dropdown-link:hover {
+    color: grey;
+}
+.dropdown-link{
+    text-decoration: none;
+}

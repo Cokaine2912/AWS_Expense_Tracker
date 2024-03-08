@@ -1,0 +1,28 @@
+#logout-div{
+    border-bottom: 1px solid black;
+}
+
+#main-table-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#download-div{
+    text-align: end;
+    margin-right: 10px;
+}
+tr{
+    font-family: 'Courier New', Courier, monospace;
+}
+td,th{
+    padding: 0;
+}
+#my-download-button{
+    padding: 1px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+#filter-div{
+    padding-left: 7px;
+}

@@ -1,0 +1,29 @@
+html,body{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+
+#log-out-div{
+    border : 3px solid greenyellow ;
+    text-align: end;
+    padding-right: 10px;
+}
+
+#form-div{
+    border: 3px solid brown;
+    display: flex;
+    justify-content: center;
+}
+
+#expense-form-div{
+    border: 2px solid gray;
+    width: max-content;
+    padding : 20px;
+    text-align: center;
+}
+#display-div{
+    border:3px solid black
+}

@@ -1,0 +1,69 @@
+#logout-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 7px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+#username-dropdown {
+    border: 0px;
+
+}
+
+#if-premium {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.dropdown-item {
+    margin-left: 10px;
+}
+
+#my-expenses-link {
+    text-decoration: none;
+}
+.dropdown-link{
+    text-decoration: none;
+}
+.dropdown-link:hover {
+    color: grey;
+}
+#page-button-div{
+    display: flex;
+    justify-content: center;
+}
+.page-buttons{
+    margin-right: 5px;
+    background-color: white;
+    border: none;
+    color: blue;
+}
+.page-buttons:hover{
+    text-decoration: underline;
+}
+#ipp-div{
+    display: flex;
+}
+
+#ipp-form {
+    display: flex;
+    justify-content: start;
+}
+#ipp-button {
+    padding: 0px 7px;
+    margin-left: 7px;
+}
+#ipp-select{
+    margin-left : 7px
+}
+#pages-info{
+    text-align: end;
+    padding-right: 10px ;
+}
+#small-page-box{
+    width: 20px;
+    height: 20px;
+}

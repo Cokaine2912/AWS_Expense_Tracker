@@ -1,0 +1,30 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+main{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heading-h3{
+    text-decoration: underline;
+    text-align: center;
+}
+form{
+    border: 4px solid rgba(0, 114, 176, 0.696);
+    width: max-content;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+}
+#login-button{
+    border: 0px;
+}
+#login-button:hover{
+    text-decoration:underline;
+}
