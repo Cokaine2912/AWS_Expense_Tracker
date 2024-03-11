@@ -17,6 +17,8 @@ function signupForm(event) {
         }
 
         alert(op.data.error);
+      } else {
+        alert("You can Proceed to Login now");
       }
     })
     .catch((err) => {
