@@ -84,6 +84,10 @@ exports.getResetPassword = async (req, res, next) => {
 
     if (forgot && forgot.isactive === true) {
       res.setHeader("Content-Type", "text/html");
+      res.setHeader(
+        "Content-Security-Policy",
+        "script-src 'self' cdnjs.cloudflare.com cdn.jsdelivr.net checkout.razorpay.com 'unsafe-inline'"
+      );
       res.write("<html>");
       res.write(`<head>
       <style>
@@ -119,12 +123,6 @@ exports.getResetPassword = async (req, res, next) => {
         }
       </style>
     </head>`);
-      res.write(`<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="form-action 'self' http://65.0.180.206:5000/password/updatenewpassword;">
-    <title>PASSWORD RESET PAGE</title>
-    <!-- Other meta tags, stylesheets, scripts, etc. -->
-</head>`);
       res.write("<h1>SET NEW PASSWORD</h1>");
       res.write(`<form action="/password/updatenewpassword" method="post">
     <input type="text" name="email" placeholder="email"><br><br>
