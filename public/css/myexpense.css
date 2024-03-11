@@ -9,6 +9,13 @@ html,body{
     padding: 10px;
 }
 
+#if-premium {
+    margin-right: 10px;
+    color: black;
+    font-size: 25px;
+}
+
+
 #username-dropdown{
     border:0;
 }

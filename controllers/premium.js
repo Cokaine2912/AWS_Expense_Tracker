@@ -39,7 +39,6 @@ exports.getPurchasePremium = async (req, res, next) => {
           return res.status(201).json({ order, key_id: rzp.key_id });
         })
         .catch((err) => {
-          // throw new Error(err);
           console.error("Unhandled Error:", err);
           res.status(500).json({ error: "Internal Server Error" });
         });
@@ -88,9 +87,9 @@ exports.postUpdateTransactionstatus = async (req, res, next) => {
 };
 
 exports.getPremiumness = async (req, res, next) => {
-  // console.log("Username :",req.headers.username)
+
   if (req.user.ispremiumUser) {
-    return res.json({ premium: true, username: req.headers.username});
+    return res.json({ premium: true, username: req.headers.username });
   } else {
     return res.json({ premium: false, username: req.headers.username });
   }
@@ -113,61 +112,16 @@ exports.postUpdateFailure = async (req, res, next) => {
 };
 
 exports.getLeaderboard = async (req, res, next) => {
-  ////
-
-  const LEADER_DATA = await User.findAll({
-    attributes :["id","username","totalSpendings"],
-    order: [["totalSpendings", "DESC"]]
-  })
-
-  // {const new_db = await User.findAll({
-  //   attributes: [
-  //     "id",
-  //     "username",
-  //     [sequelize.fn("sum", sequelize.col("expenses.amount")), "totalExpense"],
-  //   ],
-  //   include: [
-  //     {
-  //       model: Expense,
-  //       attributes: [],
-  //     },
-  //   ],
-  //   group: ["user.id"],
-  //   order: [[sequelize.literal("totalExpense"), "DESC"]],
-  // });}
-  ////
-
-  // const other = await User.findAll({
-  //   attributes: [
-  //     "username",
-  //     [
-  //       sequelize.literal(
-  //         "(SELECT SUM(amount) FROM expenses WHERE expenses.userId = User.id)"
-  //       ),
-  //       "totalExpense",
-  //     ],
-  //   ],
-  //   order: [["totalExpense", "DESC"]],
-  // });
-  // console.log(other);
-  // const current_users = await Expense.findAll({
-  //   attributes: ["userId"],
-  //   include: [
-  //     {
-  //       model: User,
-  //       attributes: ["username"],
-  //     },
-  //   ],
-  //   group: ["userId"],
-  // });
-  // console.log(current_users);
-  res.json(LEADER_DATA);
- 
+  const LEADER_DATA =
+    (await User.findAll({
+      attributes: ["id", "username", "totalSpendings"],
+      order: [["totalSpendings", "DESC"]],
+    })) / res.json(LEADER_DATA);
 };
 
-exports.getDetails = (req,res,next) =>{
+exports.getDetails = (req, res, next) => {
   if (req.user) {
-    return res.status(200).json(req.user)
+    return res.status(200).json(req.user);
   }
-  return res.json({msg : "aaya idhar"})
-}
+  return res.json({ msg: "aaya idhar" });
+};

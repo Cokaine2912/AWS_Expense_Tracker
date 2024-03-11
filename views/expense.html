@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Trirong"
     />
-    <link rel="stylesheet" href="../public/css/newexpense.css" />
+    <link rel="stylesheet" href="../public/css/addexpense.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
@@ -43,7 +43,7 @@
           aria-expanded="false"
         >
           <i class="bi bi-caret-down"></i>
-          <!-- Using Bootstrap Icons for dropdown arrow -->
+          
         </button>
         <ul class="dropdown-menu" aria-labelledby="username-dropdown">
           <!-- Dropdown options go here -->
@@ -76,12 +76,11 @@
         </ul>
       </div>
     </div>
-    <!-- The Form Div -->
+    <br><br>
     <div id="heading-div">
-      <h3>Add Expense</h3>
+      <h3 id="purpose-heading">Add Expense</h3>
     </div>
     <div id="expense-form-div">
-      <!--#####  2  #####-->
       <form id="expense-form" onsubmit="ADDEXPENSE(event)">
         <input
           type="number"
@@ -112,7 +111,7 @@
     </div>
 
     <hr />
-    <!-- The Display Div  -->
+    
     <div id="display-div">
       <ul id="expense-list"></ul>
     </div>
@@ -124,17 +123,7 @@
     </div>
 
     <div id="table-div">
-      <!-- <table id="expenseTable">
-        <thead>
-          <tr>
-            <th>User ID</th>
-            <th>Name</th>
-            <th>Total Expenses ($)</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody">
-        </tbody>
-      </table> -->
+ 
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>

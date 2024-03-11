@@ -8,6 +8,18 @@ html,body{
     justify-content: end;
     padding: 10px;
 }
+#if-premium {
+    margin-right: 10px;
+    color: black;
+    font-size: 25px;
+}
+
+#expense-form{
+    border: 4px solid rgba(0, 114, 176, 0.696);
+    border-radius: 7px;
+    text-align: center;
+    padding:10px;
+}
 
 #username-dropdown{
     border:0;
@@ -20,12 +32,6 @@ html,body{
 .dropdown-link:hover{
     color: black;
     text-decoration: underline;
-}
-
-#if-premium {
-    margin-right: 10px;
-    color: black;
-    font-size: 25px;
 }
 
 
@@ -44,15 +50,25 @@ html,body{
 #rzp-button:hover {
     text-decoration: underline;
 }
-
-#main-table-div{
+#purpose-heading{
+    text-decoration: underline;
+    text-align: center;
+}
+#expense-form-div{
+    text-align: center;
+    width: max-content;
+    margin: auto;
+}
+#leader-button{
+    margin-left: 10px;
+}
+#table-div{
     display: flex;
     justify-content: center;
 }
-
 .table {
     border-collapse: collapse;
-    width: 93%;
+    width: 70%;
     font-size: 12px;
   }
   
@@ -71,33 +87,10 @@ html,body{
     font-weight: 550;
     
   }
-
-  #page-button-div{
-    display: flex;
-    justify-content: center;
+  td:nth-child(2) {
+    width: 35%;
 }
-.page-buttons{
-    margin-right: 5px;
-    background-color: white;
-    border: none;
-    color: blue;
-}
-.page-buttons:hover{
-    text-decoration: underline;
-}
-#ipp-form{
-    display: flex;
-align-items: center;
-}
-
-#ipp-select{
-    margin:5px;
-}
-#ipp-button{
-    padding:0px 4px;
-
-}
-#pages-info{
-    text-align: end;
-    margin-right:7px;
+.db{
+    margin-left:4px;
+    font-size: 10px;
 }

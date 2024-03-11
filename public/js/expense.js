@@ -15,7 +15,7 @@ async function showLeaderBoard() {
   } else {
     const table_div = document.getElementById("table-div");
 
-    const table_html = `<table id="expenseTable">
+    const table_html = `<table id="expenseTable" class="table">
     <thead>
       <tr>
         <th>Name</th>
@@ -26,7 +26,7 @@ async function showLeaderBoard() {
     </tbody>
   </table>`;
     table_div.innerHTML = table_html;
-    const leader_html = `<table id="expenseTable">
+    const leader_html = `<table id="expenseTable" class="table">
     <thead>
       <tr>
         <th>User ID</th>

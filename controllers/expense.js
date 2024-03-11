@@ -134,7 +134,7 @@ exports.getAllDownloads = async (req, res, next) => {
   try {
     const id = req.user.id;
 
-    const total_prom = Download.count();
+    const total_prom = Download.count({ where: { userId: id } });
     const all_prom = Download.findAll({
       where: { userId: id },
       offset: ipp * (page - 1),
@@ -144,7 +144,7 @@ exports.getAllDownloads = async (req, res, next) => {
 
     const [total, all] = await Promise.all([total_prom, all_prom]);
     const total_pages = Math.ceil(total / ipp);
-    
+
     let next = false;
 
     if (page < total_pages) {
@@ -164,7 +164,7 @@ exports.getAllDownloads = async (req, res, next) => {
       data: all,
       total: total_pages,
       ipp: ipp,
-      current : page,
+      current: page,
       next: next,
       prev: prev,
     });
