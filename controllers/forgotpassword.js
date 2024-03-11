@@ -177,7 +177,7 @@ exports.updateNewPassword = async (req, res, next) => {
     user = await User.findOne({ where: { email: email } });
     forgot = await Forgot.findOne({ where: { id: id } });
 
-    const saltrounds = process.env.SALTROUNDS;
+    const saltrounds = +process.env.SALTROUNDS;
     const new_password = await HASHING(password, saltrounds);
     await user.update({ password: new_password });
 
