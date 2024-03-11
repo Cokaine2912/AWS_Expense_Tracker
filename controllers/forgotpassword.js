@@ -118,7 +118,13 @@ exports.getResetPassword = async (req, res, next) => {
           cursor: pointer;
         }
       </style>
-    </head>`)
+    </head>`);
+      res.write(`<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="form-action 'self' http://65.0.180.206:5000/password/updatenewpassword;">
+    <title>PASSWORD RESET PAGE</title>
+    <!-- Other meta tags, stylesheets, scripts, etc. -->
+</head>`);
       res.write("<h1>SET NEW PASSWORD</h1>");
       res.write(`<form action="/password/updatenewpassword" method="post">
     <input type="text" name="email" placeholder="email"><br><br>
@@ -155,8 +161,7 @@ exports.getResetLink = async (req, res, next) => {
 
     res.status(200).json({ msg: "Link sent to email", id: id });
   } catch (err) {
-
-    res.status(500).json(err)
+    res.status(500).json(err);
   }
 };
 
