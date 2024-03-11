@@ -62,6 +62,7 @@ html,body{
 #leader-button{
     margin-left: 10px;
 }
+
 #table-div{
     display: flex;
     justify-content: center;
@@ -90,7 +91,5 @@ html,body{
   td:nth-child(2) {
     width: 35%;
 }
-.db{
-    margin-left:4px;
-    font-size: 10px;
-}
+
+
