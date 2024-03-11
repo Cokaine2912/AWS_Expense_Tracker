@@ -27,7 +27,7 @@ function validate(uuid) {
   return uuidValidate(uuid);
 }
 
-const redirect = "http://localhost:5000/password/resetpassword";
+const redirect = "http://65.0.180.206:5000/password/resetpassword";
 async function SendinBlue(receiver) {
   const receivers = [
     {
@@ -41,7 +41,7 @@ async function SendinBlue(receiver) {
       to: receivers,
       subject: "Password Reset | Testing SendinBlue | Brevo",
       textContent: `This is just for testing purpose !!`,
-      htmlContent: `<h1>FIXING LINK !!</h1>
+      htmlContent: `<h1>PASSWORD RESET LINK</h1>
           <a href="${redirect}/${id}">Click here to reset Paassword<a/>`,
     });
 

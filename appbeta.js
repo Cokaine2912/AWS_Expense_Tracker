@@ -1,6 +1,3 @@
-
-///// NODE IMPORTS //////////////////////////////////////
-
 const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
@@ -10,15 +7,10 @@ const helmet = require("helmet");
 const compression = require("compression");
 const morgan = require("morgan");
 const sequelize = require("./util/database");
-
-///// ROUTES IMPORTS //////////////////////////////////////
-
 const userRoutes = require("./routes/user");
 const expenseRoutes = require("./routes/expense");
 const premiumRoutess = require("./routes/premium");
 const forgotRoutes = require("./routes/forgotpassword");
-
-///// MODELS IMPORTS //////////////////////////////////////
 
 const Expense = require("./models/expense");
 const User = require("./models/user");
@@ -26,9 +18,9 @@ const Order = require("./models/order");
 const Forgot = require("./models/forgot");
 const Download = require("./models/userdownlaod");
 
-//////////////////////////////////////////////////////////
-
 const app = express();
+console.log("Version BETA | ALL NEW BRANCH");
+console.log("Cokaine Welcomes You ! ");
 
 app.use(cors());
 app.use(helmet());
