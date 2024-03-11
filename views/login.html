@@ -15,37 +15,53 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/login.css" />
   </head>
   <body>
-    <div id="login-form-div">
-      <h3 id="login-heading">Existing User Login</h3>
-      <br />
-      <form onsubmit="Login(event)" id="login-form">
-        <label for="email"></label>
-        <input type="email" name="email" required placeholder="Email" />
-        <br /><br />
-        <label for="password"></label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          required
-          placeholder="Password"
-        />
-        <br /><br />
-        <button id="login-button" class="btn btn-outline-primary">Login</button>
-      </form>
-      <br>
-      <div id="forgot-password-div">
-        <a href="./onlyEmail.html" id="forgot-password">Forgot Password ?</a>
+
+    <div id="header-common-div">
+      <div id="company-div">
+        <h2>Cokaine</h2>
       </div>
-      <br />
-      <div id="new-signup">
-        New User?<a href="./index.html"><button id="small-signup-button" class="btn btn-outline-primary">Sign Up</button></a>
+      <div id="header-options-div">
+        <a id="about-a" href="" class="header-option-link">About</a>
+        <a href="./login.html" class="header-option-link">Login</a>
       </div>
     </div>
-  </body>
+    <div id="main-div">
+      <div id="login-form-div">
+        <h3 id="login-heading">Existing User Login</h3>
+        <br />
+        <form onsubmit="Login(event)" id="login-form">
+          <label for="email"></label>
+          <input type="email" name="email" required placeholder="Email" />
+          <br /><br />
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Password"
+          />
+          <br /><br />
+          <button id="login-button" class="btn btn-outline-primary">Login</button>
+        </form>
+        <br>
+        <div id="forgot-password-div">
+          <a href="./onlyEmail.html" id="forgot-password">Forgot Password ?</a>
+        </div>
+        <br />
+        <div id="new-signup">
+          New User?<a href="./index.html" id="signup-link">Sign up</a>
+        </div>
+      </div>
+    </body>
+
+
+    </div>
+    
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 
   <script src="../public/js/login.js"></script>

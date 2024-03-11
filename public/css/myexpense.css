@@ -1,28 +1,86 @@
+html,body{
+    margin : 0;
+    padding : 0;
+}
 #logout-div{
-    border-bottom: 1px solid black;
+    border-bottom : 1px solid black;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+#username-dropdown{
+    border:0;
+}
+
+.dropdown-link{
+    text-decoration: none;
+}
+
+.dropdown-link:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#rzp-button {
+    font-family: "Trirong", serif;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 10px;
+    background-color: white;
+    color: gold;
+    font-size: 20px;
+}
+
+#rzp-button:hover {
+    text-decoration: underline;
+}
+#download-div{
+    text-align: end;
+}
+#my-download-button{
+    padding:2px;
+    margin-right: 3.5%;
+    font-size:12px
+}
+#show-button{
+    padding: 0 2px;
+    font-size: 15px;
+    margin-left: 4px;
+}
+#filter-form{
+    display: flex;
+    margin-left: 3.5%;
+}
+.filter-select{
+    margin: 4px;
+    font-size: 14px;
 }
 
 #main-table-div{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
 }
-#download-div{
-    text-align: end;
-    margin-right: 10px;
-}
-tr{
+.table {
+    border-collapse: collapse;
+    width: 93%;
+    font-size : 12px
+  }
+  
+  .table th, .table td {
+    border: 1px solid black; 
+    padding: 8px;
+  }
+  
+  .table th {
+    text-align: center;
+    background-color: wheat ;
+    font-size : 15px;
+  }
+  td{
     font-family: 'Courier New', Courier, monospace;
-}
-td,th{
-    padding: 0;
-}
-#my-download-button{
-    padding: 1px;
-    font-size: 12px;
-    border-radius: 2px;
-}
-#filter-div{
-    padding-left: 7px;
-}
+    font-weight: 550;
+  }
+  

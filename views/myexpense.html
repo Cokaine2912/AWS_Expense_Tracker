@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Trirong"
     />
-    <link rel="stylesheet" href="../public/css/newexpense.css" />
+    <!-- <link rel="stylesheet" href="../public/css/newexpense.css" /> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
@@ -74,28 +74,30 @@
 
     <br /><br />
     <div id="filter-div">
-      <form action="">
-        <select name="timeframe" id="timeframe-select">
+      <form id="filter-form">
+        Filter 🔎 :
+        <select name="timeframe" id="timeframe-select" class="filter-select">
           <option disabled selected>timeframe</option>
           <option value="daily">1d</option>
           <option value="weekly">1w</option>
           <option value="monthly">1y</option>
           <option value="all">All</option>
         </select>
-        <select name="category" id="category-select">
+        <select name="category" id="category-select" class="filter-select">
           <option disabled selected value="category" >category</option>
           <option value="food">Food</option>
           <option value="salary">Salary</option>
           <option value="petrol">Petrol</option>
           <option value="all">All</option>
         </select>
-        <button>show</button>
+        <button class="btn btn-outline-primary" id="show-button">show</button>
       </form>
     </div>
     <div id="download-div">
       <button class="btn btn-outline-primary" id="my-download-button" onclick="DOWNLOAD(event)">
         Download
       </button>
+      <br><br>
     </div>
     <div id="main-table-div">
       <table class="table">
@@ -109,20 +111,6 @@
           </tr>
         </thead>
         <tbody id="table-body">
-          <!-- <tr>
-            <td>2024-03-01</td>
-            <td>Salary</td>
-            <td>Income</td>
-            <td>$2000.00</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2024-03-02</td>
-            <td>Groceries</td>
-            <td>Food</td>
-            <td></td>
-            <td>$50.00</td>
-          </tr> -->
         </tbody>
       </table>
     </div>

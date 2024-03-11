@@ -1,3 +1,21 @@
 #header-common-div{
-    border: 2px solid brown
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-option-link{
+    margin : 7px;
+    align-items: center;
+    text-decoration: none;
+}
+.header-option-link:hover{
+    text-decoration: underline;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
 }

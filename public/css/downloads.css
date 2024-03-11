@@ -1,37 +1,69 @@
-#logout-div {
+html,body{
+    margin : 0;
+    padding : 0;
+}
+#logout-div{
+    border-bottom : 1px solid black;
     display: flex;
     justify-content: end;
-    align-items: center;
-    padding-right: 7px;
     padding: 10px;
-    border-bottom: 1px solid black;
 }
 
-
-#username-dropdown {
-    border: 0px;
-
+#username-dropdown{
+    border:0;
 }
 
-#if-premium {
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-.dropdown-item {
-    margin-left: 10px;
-}
-
-#my-expenses-link {
-    text-decoration: none;
-}
 .dropdown-link{
     text-decoration: none;
 }
-.dropdown-link:hover {
-    color: grey;
+
+.dropdown-link:hover{
+    color: black;
+    text-decoration: underline;
 }
-#page-button-div{
+
+#rzp-button {
+    font-family: "Trirong", serif;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 10px;
+    background-color: white;
+    color: gold;
+    font-size: 20px;
+}
+
+#rzp-button:hover {
+    text-decoration: underline;
+}
+
+#main-table-div{
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 93%;
+  }
+  
+  .table th, .table td {
+    border: 1px solid black; 
+    padding: 8px;
+  }
+  
+  .table th {
+    text-align: center;
+    background-color: wheat ;
+  }
+  td{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    
+  }
+
+  #page-button-div{
     display: flex;
     justify-content: center;
 }
@@ -44,26 +76,19 @@
 .page-buttons:hover{
     text-decoration: underline;
 }
-#ipp-div{
+#ipp-form{
     display: flex;
+align-items: center;
 }
 
-#ipp-form {
-    display: flex;
-    justify-content: start;
-}
-#ipp-button {
-    padding: 0px 7px;
-    margin-left: 7px;
-}
 #ipp-select{
-    margin-left : 7px
+    margin:5px;
+}
+#ipp-button{
+    padding:0px 4px;
+
 }
 #pages-info{
     text-align: end;
-    padding-right: 10px ;
-}
-#small-page-box{
-    width: 20px;
-    height: 20px;
+    margin-right:7px;
 }
