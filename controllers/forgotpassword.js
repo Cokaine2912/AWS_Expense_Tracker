@@ -120,7 +120,7 @@ exports.getResetPassword = async (req, res, next) => {
       </style>
     </head>`)
       res.write("<h1>SET NEW PASSWORD</h1>");
-      res.write(`<form action="http://localhost:5000/password/updatenewpassword" method="post">
+      res.write(`<form action="http://65.0.180.206:5000/password/updatenewpassword" method="post">
     <input type="text" name="email" placeholder="email"><br><br>
     <input type="password" name="password" id="password" placeholder="password"><br><br>
     <input type="password" name="confirm" id="confirm" placeholder="confirm password"><br><br>
